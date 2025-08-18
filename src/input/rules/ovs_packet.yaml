@@ -1,0 +1,47 @@
+generic_netlink_family:
+  name: ovs_packet
+  cmd_range:
+    min: 1
+    max: 3
+  cmd_requires_pre_test:
+    - 3
+  attributes:
+    - name: OVS_PACKET_ATTR_PACKET
+      type: object
+      supported_by:
+        - 3
+    - name: OVS_PACKET_ATTR_KEY
+      type: object
+      supported_by:
+        - 3
+    - name: OVS_PACKET_ATTR_ACTIONS
+      type: object
+      supported_by:
+        - 3
+    - name: OVS_PACKET_ATTR_USERDATA
+      type: object
+      supported_by: []
+    - name: OVS_PACKET_ATTR_EGRESS_TUN_KEY
+      type: object
+      supported_by: []
+    - name: OVS_PACKET_ATTR_UNUSED1
+      type: uint
+      supported_by: []
+    - name: OVS_PACKET_ATTR_UNUSED2
+      type: uint
+      supported_by: []
+    - name: OVS_FLOW_ATTR_PROBE
+      type: uint8
+      supported_by:
+        - 3
+    - name: OVS_PACKET_ATTR_MRU
+      type: ushort
+      supported_by:
+        - 3
+    - name: OVS_PACKET_ATTR_LEN
+      type: uint
+      supported_by: []
+    - name: OVS_PACKET_ATTR_HASH
+      type: ulong
+      supported_by:
+        - 3

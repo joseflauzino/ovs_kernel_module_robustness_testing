@@ -1,0 +1,540 @@
+
+
+ID: 1 === Executing PRE_TEST of the test case: OVS_DP_ATTR_USER_FEATURES[NumMaxUint]-CMD[4].yaml===
+
+
+ID: 1 === Executing TEST of the test case: OVS_DP_ATTR_USER_FEATURES[NumMaxUint]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_USER_FEATURES', 4294967295), ('OVS_DP_ATTR_UPCALL_PID', [12591812]), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 8397508, 'length': 68}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 8397508, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 2 === Executing TEST of the test case: OVS_DP_ATTR_IFINDEX[Null]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [['OVS_DP_ATTR_IFINDEX', None], ('OVS_DP_ATTR_UPCALL_PID', [12591812]), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 8397508, 'length': 68}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 8397508, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 3 === Executing TEST of the test case: OVS_DP_ATTR_PER_CPU_PIDS[ObjCommon]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_PER_CPU_PIDS', []), ('OVS_DP_ATTR_UPCALL_PID', [12591812]), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 8397508, 'length': 72}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 8397508, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 4 === Executing PRE_TEST of the test case: OVS_DP_ATTR_PER_CPU_PIDS[ObjPrimitive]-CMD[4].yaml===
+
+
+ID: 4 === Executing TEST of the test case: OVS_DP_ATTR_PER_CPU_PIDS[ObjPrimitive]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_PER_CPU_PIDS', 100), ('OVS_DP_ATTR_UPCALL_PID', [12591812]), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 8397508, 'length': 76}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 8397508, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 5 === Executing TEST of the test case: OVS_DP_ATTR_NAME[StrOverflow]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_NAME', 'Modi quiquia sit ipsum quiquia sit sit. Etincidunt adipisci quisquam sit labore. Velit dolore etincidunt aliquam. Eius est magnam quiquia. Neque sed dolorem amet. Aliquam velit quaerat sed consectetur. Labore non consectetur quisquam non. Quiquia voluptatem dolore etincidunt etincidunt etincidunt.'), ('OVS_DP_ATTR_UPCALL_PID', [12591812]), ('OVS_DP_ATTR_USER_FEATURES', 8)], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 8397508, 'length': 352}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 6 === Executing PRE_TEST of the test case: OVS_DP_ATTR_NAME[Null]-CMD[2].yaml===
+
+
+ID: 6 === Executing TEST of the test case: OVS_DP_ATTR_NAME[Null]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_NAME', None), ('OVS_DP_ATTR_UPCALL_PID', [20980420]), ('OVS_DP_ATTR_USER_FEATURES', 8)], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 16786116, 'length': 52}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 7 === Executing PRE_TEST of the test case: OVS_DP_ATTR_NAME[StrOverflow]-CMD[2].yaml===
+
+
+ID: 7 === Executing TEST of the test case: OVS_DP_ATTR_NAME[StrOverflow]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_NAME', 'Consectetur ipsum labore est modi ut consectetur. Numquam numquam consectetur ut sit neque voluptatem. Labore labore magnam labore neque dolore. Est voluptatem etincidunt neque. Tempora aliquam neque amet sed est adipisci tempora. Sed consectetur magnam velit porro velit ut eius. Quiquia porro sit porro. Dolor adipisci tempora eius adipisci dolore quiquia amet. Ipsum non modi quisquam magnam numquam.'), ('OVS_DP_ATTR_UPCALL_PID', [12591812]), ('OVS_DP_ATTR_USER_FEATURES', 8)], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 8397508, 'length': 456}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 8 === Executing TEST of the test case: OVS_DP_ATTR_NAME[StrNonAscii]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_NAME', 'dp-test-çáãËÆ'), ('OVS_DP_ATTR_UPCALL_PID', [12591812]), ('OVS_DP_ATTR_USER_FEATURES', 8)], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 8397508, 'length': 72}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 9 === Executing TEST of the test case: test.yaml===
+
+Message sent: {'cmd': 3, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 1, 'sequence_number': 255, 'pid': 16786116, 'length': 44}}
+Netlink Error Code: 19
+Netlink Error Message: No such device
+Reply Message: None
+
+
+ID: 10 === Executing PRE_TEST of the test case: OVS_DP_ATTR_MASKS_CACHE_SIZE[NumOverflowUint]-CMD[4].yaml===
+
+
+ID: 10 === Executing TEST of the test case: OVS_DP_ATTR_MASKS_CACHE_SIZE[NumOverflowUint]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_MASKS_CACHE_SIZE', 4294968295), ('OVS_DP_ATTR_UPCALL_PID', [12591812]), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 8397508, 'length': 80}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 8397508, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 11 === Executing PRE_TEST of the test case: OVS_DP_ATTR_NAME[Null]-CMD[3].yaml===
+
+
+ID: 11 === Executing TEST of the test case: OVS_DP_ATTR_NAME[Null]-CMD[3].yaml===
+
+Message sent: {'cmd': 3, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_NAME', None)], 'header': {'type': 28, 'flags': 1, 'sequence_number': 255, 'pid': 8397508, 'length': 28}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 12 === Executing PRE_TEST of the test case: OVS_DP_ATTR_USER_FEATURES[NumOverflowUint]-CMD[4].yaml===
+
+
+ID: 12 === Executing TEST of the test case: OVS_DP_ATTR_USER_FEATURES[NumOverflowUint]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_USER_FEATURES', 4294968295), ('OVS_DP_ATTR_UPCALL_PID', [16786116]), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 12591812, 'length': 68}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 12591812, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 13 === Executing TEST of the test case: OVS_DP_ATTR_UPCALL_PID[NumMaxUint]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_UPCALL_PID', 4294967295), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 12591812, 'length': 68}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 12591812, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 14 === Executing PRE_TEST of the test case: OVS_DP_ATTR_NAME[StrNonPrintable]-CMD[3].yaml===
+
+
+ID: 14 === Executing TEST of the test case: OVS_DP_ATTR_NAME[StrNonPrintable]-CMD[3].yaml===
+
+Message sent: {'cmd': 3, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_NAME', 'ab\ncd\t')], 'header': {'type': 28, 'flags': 1, 'sequence_number': 255, 'pid': 12591812, 'length': 36}}
+Netlink Error Code: 19
+Netlink Error Message: No such device
+Reply Message: None
+
+
+ID: 15 === Executing PRE_TEST of the test case: OVS_DP_ATTR_PER_CPU_PIDS[ObjCommon]-CMD[4].yaml===
+
+
+ID: 15 === Executing TEST of the test case: OVS_DP_ATTR_PER_CPU_PIDS[ObjCommon]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_PER_CPU_PIDS', []), ('OVS_DP_ATTR_UPCALL_PID', [16786116]), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 12591812, 'length': 72}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 12591812, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 16 === Executing PRE_TEST of the test case: OVS_DP_ATTR_MASKS_CACHE_SIZE[NumMinUint]-CMD[4].yaml===
+
+
+ID: 16 === Executing TEST of the test case: OVS_DP_ATTR_MASKS_CACHE_SIZE[NumMinUint]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_MASKS_CACHE_SIZE', 0), ('OVS_DP_ATTR_UPCALL_PID', [12591812]), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 8397508, 'length': 80}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 8397508, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 17 === Executing TEST of the test case: OVS_DP_ATTR_UPCALL_PID[NumOverflowUint]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_UPCALL_PID', 4294968295), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 16786116, 'length': 68}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 16786116, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 18 === Executing PRE_TEST of the test case: OVS_DP_ATTR_NAME[StrNonPrintable]-CMD[2].yaml===
+
+
+ID: 18 === Executing TEST of the test case: OVS_DP_ATTR_NAME[StrNonPrintable]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_NAME', 'ab\ncd\t'), ('OVS_DP_ATTR_UPCALL_PID', [12591812]), ('OVS_DP_ATTR_USER_FEATURES', 8)], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 8397508, 'length': 60}}
+Netlink Error Code: 19
+Netlink Error Message: No such device
+Reply Message: None
+
+
+ID: 19 === Executing PRE_TEST of the test case: OVS_DP_ATTR_PER_CPU_PIDS[Null]-CMD[4].yaml===
+
+
+ID: 19 === Executing TEST of the test case: OVS_DP_ATTR_PER_CPU_PIDS[Null]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_PER_CPU_PIDS', None), ('OVS_DP_ATTR_UPCALL_PID', [12591812]), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 8397508, 'length': 72}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 8397508, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 20 === Executing TEST of the test case: OVS_DP_ATTR_NAME[Null]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_NAME', None), ('OVS_DP_ATTR_UPCALL_PID', [12591812]), ('OVS_DP_ATTR_USER_FEATURES', 8)], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 8397508, 'length': 52}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 21 === Executing TEST of the test case: OVS_DP_ATTR_NAME[StrNonPrintable]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_NAME', 'ab\ncd\t'), ('OVS_DP_ATTR_UPCALL_PID', [20980420]), ('OVS_DP_ATTR_USER_FEATURES', 8)], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 16786116, 'length': 60}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 22 === Executing PRE_TEST of the test case: OVS_DP_ATTR_NAME[StrNonAscii]-CMD[3].yaml===
+
+
+ID: 22 === Executing TEST of the test case: OVS_DP_ATTR_NAME[StrNonAscii]-CMD[3].yaml===
+
+Message sent: {'cmd': 3, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_NAME', 'dp-test-çáãËÆ')], 'header': {'type': 28, 'flags': 1, 'sequence_number': 255, 'pid': 8397508, 'length': 48}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 23 === Executing PRE_TEST of the test case: OVS_DP_ATTR_USER_FEATURES[Null]-CMD[4].yaml===
+
+
+ID: 23 === Executing TEST of the test case: OVS_DP_ATTR_USER_FEATURES[Null]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_USER_FEATURES', None), ('OVS_DP_ATTR_UPCALL_PID', [12591812]), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 8397508, 'length': 60}}
+Netlink Error Code: 34
+Netlink Error Message: Numerical result out of range
+Reply Message: None
+
+
+ID: 24 === Executing PRE_TEST of the test case: OVS_DP_ATTR_NAME[StrOverflow]-CMD[4].yaml===
+
+
+ID: 24 === Executing TEST of the test case: OVS_DP_ATTR_NAME[StrOverflow]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_NAME', 'Adipisci adipisci ipsum quaerat tempora labore voluptatem dolore. Velit velit consectetur numquam etincidunt ipsum dolore. Eius labore est ipsum. Sit voluptatem quaerat amet velit sed est. Numquam velit adipisci quisquam. Dolore consectetur non dolorem non adipisci est tempora. Quisquam est labore dolore neque. Adipisci eius ipsum adipisci amet etincidunt. Dolore dolor quisquam etincidunt voluptatem est est consectetur. Dolore non labore labore adipisci quaerat.'), ('OVS_DP_ATTR_UPCALL_PID', [12591812]), ('OVS_DP_ATTR_USER_FEATURES', 8)], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 8397508, 'length': 520}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 25 === Executing TEST of the test case: OVS_DP_ATTR_UPCALL_PID[Null]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_UPCALL_PID', None), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 8397508, 'length': 60}}
+Netlink Error Code: 34
+Netlink Error Message: Numerical result out of range
+Reply Message: None
+
+
+ID: 26 === Executing PRE_TEST of the test case: OVS_DP_ATTR_NAME[StrNonAscii]-CMD[2].yaml===
+
+
+ID: 26 === Executing TEST of the test case: OVS_DP_ATTR_NAME[StrNonAscii]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_NAME', 'dp-test-çáãËÆ'), ('OVS_DP_ATTR_UPCALL_PID', [16786116]), ('OVS_DP_ATTR_USER_FEATURES', 8)], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 12591812, 'length': 72}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 27 === Executing TEST of the test case: OVS_DP_ATTR_PER_CPU_PIDS[Null]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_PER_CPU_PIDS', None), ('OVS_DP_ATTR_UPCALL_PID', [12591812]), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 8397508, 'length': 72}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 8397508, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 28 === Executing TEST of the test case: OVS_DP_ATTR_UPCALL_PID[NumUnderflowUint]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_UPCALL_PID', -1000), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 8397508, 'length': 68}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 8397508, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 29 === Executing TEST of the test case: OVS_DP_ATTR_MASKS_CACHE_SIZE[NumUnderflowUint]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_MASKS_CACHE_SIZE', -1000), ('OVS_DP_ATTR_UPCALL_PID', [16786116]), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 12591812, 'length': 80}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 12591812, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 30 === Executing PRE_TEST of the test case: OVS_DP_ATTR_MASKS_CACHE_SIZE[NumMaxUint]-CMD[4].yaml===
+
+
+ID: 30 === Executing TEST of the test case: OVS_DP_ATTR_MASKS_CACHE_SIZE[NumMaxUint]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_MASKS_CACHE_SIZE', 4294967295), ('OVS_DP_ATTR_UPCALL_PID', [20980420]), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 8397508, 'length': 80}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 8397508, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 31 === Executing TEST of the test case: OVS_DP_ATTR_USER_FEATURES[NumOverflowUint]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_USER_FEATURES', 4294968295), ('OVS_DP_ATTR_UPCALL_PID', [29369028]), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 25174724, 'length': 68}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 25174724, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 32 === Executing PRE_TEST of the test case: OVS_DP_ATTR_NAME[StrEmpty]-CMD[4].yaml===
+
+
+ID: 32 === Executing TEST of the test case: OVS_DP_ATTR_NAME[StrEmpty]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_NAME', ''), ('OVS_DP_ATTR_UPCALL_PID', [12591812]), ('OVS_DP_ATTR_USER_FEATURES', 8)], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 8397508, 'length': 56}}
+Netlink Error Code: 19
+Netlink Error Message: No such device
+Reply Message: None
+
+
+ID: 33 === Executing PRE_TEST of the test case: OVS_DP_ATTR_MASKS_CACHE_SIZE[NumUnderflowUint]-CMD[4].yaml===
+
+
+ID: 33 === Executing TEST of the test case: OVS_DP_ATTR_MASKS_CACHE_SIZE[NumUnderflowUint]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_MASKS_CACHE_SIZE', -1000), ('OVS_DP_ATTR_UPCALL_PID', [16786116]), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 12591812, 'length': 80}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 12591812, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 34 === Executing TEST of the test case: OVS_DP_ATTR_PER_CPU_PIDS[ObjPrimitive]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_PER_CPU_PIDS', 100), ('OVS_DP_ATTR_UPCALL_PID', [16786116]), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 12591812, 'length': 76}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 12591812, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 35 === Executing TEST of the test case: OVS_DP_ATTR_UPCALL_PID[NumMinUint]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_UPCALL_PID', 0), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 12591812, 'length': 68}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 12591812, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 36 === Executing TEST of the test case: OVS_DP_ATTR_USER_FEATURES[Null]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_USER_FEATURES', None), ('OVS_DP_ATTR_UPCALL_PID', [16786116]), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 12591812, 'length': 60}}
+Netlink Error Code: 34
+Netlink Error Message: Numerical result out of range
+Reply Message: None
+
+
+ID: 37 === Executing TEST of the test case: OVS_DP_ATTR_MASKS_CACHE_SIZE[Null]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_MASKS_CACHE_SIZE', None), ('OVS_DP_ATTR_UPCALL_PID', [25174724]), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 20980420, 'length': 72}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 20980420, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 38 === Executing PRE_TEST of the test case: OVS_DP_ATTR_NAME[StrNonPrintable]-CMD[4].yaml===
+
+
+ID: 38 === Executing TEST of the test case: OVS_DP_ATTR_NAME[StrNonPrintable]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_NAME', 'ab\ncd\t'), ('OVS_DP_ATTR_UPCALL_PID', [16786116]), ('OVS_DP_ATTR_USER_FEATURES', 8)], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 12591812, 'length': 60}}
+Netlink Error Code: 19
+Netlink Error Message: No such device
+Reply Message: None
+
+
+ID: 39 === Executing TEST of the test case: OVS_DP_ATTR_USER_FEATURES[NumMaxUint]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_USER_FEATURES', 4294967295), ('OVS_DP_ATTR_UPCALL_PID', [16786116]), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 12591812, 'length': 68}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 12591812, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 40 === Executing PRE_TEST of the test case: OVS_DP_ATTR_MASKS_CACHE_SIZE[Null]-CMD[4].yaml===
+
+
+ID: 40 === Executing TEST of the test case: OVS_DP_ATTR_MASKS_CACHE_SIZE[Null]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_MASKS_CACHE_SIZE', None), ('OVS_DP_ATTR_UPCALL_PID', [16786116]), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 12591812, 'length': 72}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 12591812, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 41 === Executing TEST of the test case: OVS_DP_ATTR_USER_FEATURES[NumMinUint]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_USER_FEATURES', 0), ('OVS_DP_ATTR_UPCALL_PID', [16786116]), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 12591812, 'length': 68}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 12591812, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 42 === Executing PRE_TEST of the test case: OVS_DP_ATTR_NAME[StrNonAscii]-CMD[4].yaml===
+
+
+ID: 42 === Executing TEST of the test case: OVS_DP_ATTR_NAME[StrNonAscii]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_NAME', 'dp-test-çáãËÆ'), ('OVS_DP_ATTR_UPCALL_PID', [16786116]), ('OVS_DP_ATTR_USER_FEATURES', 8)], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 12591812, 'length': 72}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 43 === Executing PRE_TEST of the test case: OVS_DP_ATTR_NAME[StrEmpty]-CMD[2].yaml===
+
+
+ID: 43 === Executing TEST of the test case: OVS_DP_ATTR_NAME[StrEmpty]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_NAME', ''), ('OVS_DP_ATTR_UPCALL_PID', [16786116]), ('OVS_DP_ATTR_USER_FEATURES', 8)], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 12591812, 'length': 56}}
+Netlink Error Code: 19
+Netlink Error Message: No such device
+Reply Message: None
+
+
+ID: 44 === Executing TEST of the test case: OVS_DP_ATTR_IFINDEX[NumMaxUint]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [['OVS_DP_ATTR_IFINDEX', 4294967295], ('OVS_DP_ATTR_UPCALL_PID', [16786116]), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 12591812, 'length': 68}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 12591812, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 45 === Executing PRE_TEST of the test case: OVS_DP_ATTR_NAME[StrOverflow]-CMD[3].yaml===
+
+
+ID: 45 === Executing TEST of the test case: OVS_DP_ATTR_NAME[StrOverflow]-CMD[3].yaml===
+
+Message sent: {'cmd': 3, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_NAME', 'Dolore modi dolore sit porro quiquia magnam dolore. Etincidunt voluptatem eius modi dolor quiquia. Magnam adipisci aliquam dolore neque dolore aliquam sed. Eius aliquam numquam modi eius amet tempora quaerat. Non sit neque dolor. Numquam sed numquam numquam. Aliquam quiquia etincidunt sed.')], 'header': {'type': 28, 'flags': 1, 'sequence_number': 255, 'pid': 8397508, 'length': 320}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 46 === Executing PRE_TEST of the test case: OVS_DP_ATTR_USER_FEATURES[NumMinUint]-CMD[4].yaml===
+
+
+ID: 46 === Executing TEST of the test case: OVS_DP_ATTR_USER_FEATURES[NumMinUint]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_USER_FEATURES', 0), ('OVS_DP_ATTR_UPCALL_PID', [12591812]), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 8397508, 'length': 68}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 8397508, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 47 === Executing TEST of the test case: OVS_DP_ATTR_IFINDEX[NumMinUint]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [['OVS_DP_ATTR_IFINDEX', 0], ('OVS_DP_ATTR_UPCALL_PID', [12591812]), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 8397508, 'length': 68}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 8397508, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 48 === Executing PRE_TEST of the test case: OVS_DP_ATTR_NAME[StrEmpty]-CMD[3].yaml===
+
+
+ID: 48 === Executing TEST of the test case: OVS_DP_ATTR_NAME[StrEmpty]-CMD[3].yaml===
+
+Message sent: {'cmd': 3, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_NAME', '')], 'header': {'type': 28, 'flags': 1, 'sequence_number': 255, 'pid': 8397508, 'length': 32}}
+Netlink Error Code: 19
+Netlink Error Message: No such device
+Reply Message: None
+
+
+ID: 49 === Executing TEST of the test case: OVS_DP_ATTR_NAME[StrEmpty]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_NAME', ''), ('OVS_DP_ATTR_UPCALL_PID', [12591812]), ('OVS_DP_ATTR_USER_FEATURES', 8)], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 8397508, 'length': 56}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 50 === Executing TEST of the test case: OVS_DP_ATTR_IFINDEX[NumUnderflowUint]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [['OVS_DP_ATTR_IFINDEX', -1000], ('OVS_DP_ATTR_UPCALL_PID', [20980420]), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 16786116, 'length': 68}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 16786116, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 51 === Executing PRE_TEST of the test case: OVS_DP_ATTR_NAME[Null]-CMD[4].yaml===
+
+
+ID: 51 === Executing TEST of the test case: OVS_DP_ATTR_NAME[Null]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_NAME', None), ('OVS_DP_ATTR_UPCALL_PID', [12591812]), ('OVS_DP_ATTR_USER_FEATURES', 8)], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 8397508, 'length': 52}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 52 === Executing TEST of the test case: OVS_DP_ATTR_USER_FEATURES[NumUnderflowUint]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_USER_FEATURES', -1000), ('OVS_DP_ATTR_UPCALL_PID', [20980420]), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 12591812, 'length': 68}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 12591812, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 53 === Executing TEST of the test case: OVS_DP_ATTR_MASKS_CACHE_SIZE[NumOverflowUint]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_MASKS_CACHE_SIZE', 4294968295), ('OVS_DP_ATTR_UPCALL_PID', [20980420]), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 12591812, 'length': 80}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 12591812, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 54 === Executing PRE_TEST of the test case: OVS_DP_ATTR_USER_FEATURES[NumUnderflowUint]-CMD[4].yaml===
+
+
+ID: 54 === Executing TEST of the test case: OVS_DP_ATTR_USER_FEATURES[NumUnderflowUint]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_USER_FEATURES', -1000), ('OVS_DP_ATTR_UPCALL_PID', [20980420]), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 12591812, 'length': 68}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 12591812, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 55 === Executing TEST of the test case: OVS_DP_ATTR_MASKS_CACHE_SIZE[NumMinUint]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_MASKS_CACHE_SIZE', 0), ('OVS_DP_ATTR_UPCALL_PID', [20980420]), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 12591812, 'length': 80}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 12591812, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 56 === Executing TEST of the test case: OVS_DP_ATTR_IFINDEX[NumOverflowUint]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [['OVS_DP_ATTR_IFINDEX', 4294968295], ('OVS_DP_ATTR_UPCALL_PID', [20980420]), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 12591812, 'length': 68}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 12591812, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 57 === Executing TEST of the test case: OVS_DP_ATTR_MASKS_CACHE_SIZE[NumMaxUint]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 0, 'attrs': [('OVS_DP_ATTR_MASKS_CACHE_SIZE', 4294967295), ('OVS_DP_ATTR_UPCALL_PID', [20980420]), ('OVS_DP_ATTR_USER_FEATURES', 8), ('OVS_DP_ATTR_NAME', 'dp-default-name')], 'header': {'type': 28, 'flags': 5, 'sequence_number': 255, 'pid': 12591812, 'length': 80}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 12591812, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}

@@ -1,0 +1,51 @@
+generic_netlink_family:
+  name: ovs_vport
+  cmd_range:
+    min: 1
+    max: 4
+  cmd_requires_pre_test:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  attributes:
+    - name: OVS_VPORT_ATTR_PORT_NO
+      type: uint
+      supported_by:
+        - 1
+    - name: OVS_VPORT_ATTR_TYPE
+      type: uint
+      supported_by:
+        - 1
+        - 4
+    - name: OVS_VPORT_ATTR_NAME
+      type: string
+      supported_by:
+        - 1
+    - name: OVS_VPORT_ATTR_OPTIONS
+      type: object
+      supported_by:
+        - 1
+        - 4
+    - name: OVS_VPORT_ATTR_UPCALL_PID
+      type: object
+      supported_by:
+        - 1
+        - 4
+    - name: OVS_VPORT_ATTR_STATS
+      type: object
+      supported_by: []
+    - name: OVS_VPORT_ATTR_PAD
+      type: uint
+      supported_by: []
+    - name: OVS_VPORT_ATTR_IFINDEX
+      type: int
+      supported_by:
+        - 1
+    - name: OVS_VPORT_ATTR_NETNSID
+      type: uint
+      supported_by: []
+    - name: OVS_VPORT_ATTR_UPCALL_STATS
+      type: object
+      supported_by: []

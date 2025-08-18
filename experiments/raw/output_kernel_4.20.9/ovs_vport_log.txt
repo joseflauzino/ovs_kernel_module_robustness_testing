@@ -1,0 +1,418 @@
+
+
+ID: 1 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_OPTIONS[Null]-CMD[4].yaml===
+
+
+ID: 1 === Executing TEST of the test case: OVS_VPORT_ATTR_OPTIONS[Null]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 49, 'attrs': [('OVS_VPORT_ATTR_OPTIONS', None)], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 8391742, 'length': 28}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 2 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_PORT_NO[NumOverflowUint]-CMD[1].yaml===
+
+
+ID: 2 === Executing TEST of the test case: OVS_VPORT_ATTR_PORT_NO[NumOverflowUint]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 50, 'attrs': [('OVS_VPORT_ATTR_PORT_NO', 4294968295), ('OVS_VPORT_ATTR_TYPE', 1), ('OVS_VPORT_ATTR_NAME', 'vport1'), ('OVS_VPORT_ATTR_UPCALL_PID', [8391742])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 12586046, 'length': 72}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 12586046, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 3 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_NAME[StrEmpty]-CMD[1].yaml===
+
+
+ID: 3 === Executing TEST of the test case: OVS_VPORT_ATTR_NAME[StrEmpty]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 51, 'attrs': [('OVS_VPORT_ATTR_NAME', ''), ('OVS_VPORT_ATTR_TYPE', 1), ('OVS_VPORT_ATTR_UPCALL_PID', [25168958])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 8391742, 'length': 56}}
+Netlink Error Code: 19
+Netlink Error Message: No such device
+Reply Message: None
+
+
+ID: 4 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_UPCALL_PID[Null]-CMD[1].yaml===
+
+
+ID: 4 === Executing TEST of the test case: OVS_VPORT_ATTR_UPCALL_PID[Null]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 52, 'attrs': [('OVS_VPORT_ATTR_UPCALL_PID', None), ('OVS_VPORT_ATTR_TYPE', 1), ('OVS_VPORT_ATTR_NAME', 'vport1')], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 8391742, 'length': 52}}
+Netlink Error Code: 34
+Netlink Error Message: Numerical result out of range
+Reply Message: None
+
+
+ID: 5 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_OPTIONS[ObjCommon]-CMD[1].yaml===
+
+
+ID: 5 === Executing TEST of the test case: OVS_VPORT_ATTR_OPTIONS[ObjCommon]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 53, 'attrs': [('OVS_VPORT_ATTR_OPTIONS', []), ('OVS_VPORT_ATTR_TYPE', 1), ('OVS_VPORT_ATTR_NAME', 'vport1'), ('OVS_VPORT_ATTR_UPCALL_PID', [25168958])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 8391742, 'length': 64}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 8391742, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 6 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_IFINDEX[Null]-CMD[1].yaml===
+
+
+ID: 6 === Executing TEST of the test case: OVS_VPORT_ATTR_IFINDEX[Null]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 54, 'attrs': [('OVS_VPORT_ATTR_IFINDEX', None), ('OVS_VPORT_ATTR_TYPE', 1), ('OVS_VPORT_ATTR_NAME', 'vport1'), ('OVS_VPORT_ATTR_UPCALL_PID', [29363262])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 20974654, 'length': 64}}
+Netlink Error Code: 34
+Netlink Error Message: Numerical result out of range
+Reply Message: None
+
+
+ID: 7 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_UPCALL_PID[ObjPrimitive]-CMD[1].yaml===
+
+
+ID: 7 === Executing TEST of the test case: OVS_VPORT_ATTR_UPCALL_PID[ObjPrimitive]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 55, 'attrs': [('OVS_VPORT_ATTR_UPCALL_PID', 100), ('OVS_VPORT_ATTR_TYPE', 1), ('OVS_VPORT_ATTR_NAME', 'vport1')], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 20974654, 'length': 60}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 20974654, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 8 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_TYPE[NumMaxUint]-CMD[1].yaml===
+
+
+ID: 8 === Executing TEST of the test case: OVS_VPORT_ATTR_TYPE[NumMaxUint]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 56, 'attrs': [('OVS_VPORT_ATTR_TYPE', 4294967295), ('OVS_VPORT_ATTR_NAME', 'vport1'), ('OVS_VPORT_ATTR_UPCALL_PID', [33557566])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 25168958, 'length': 60}}
+Netlink Error Code: 97
+Netlink Error Message: Address family not supported by protocol
+Reply Message: None
+
+
+ID: 9 === Executing PRE_TEST of the test case: test-1.yaml===
+
+
+ID: 9 === Executing TEST of the test case: test-1.yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 57, 'attrs': [('OVS_VPORT_ATTR_PORT_NO', 5), ('OVS_VPORT_ATTR_TYPE', 1), ('OVS_VPORT_ATTR_NAME', 'vport1'), ('OVS_VPORT_ATTR_UPCALL_PID', [33557566])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 25168958, 'length': 72}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 25168958, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 10 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_UPCALL_PID[ObjPrimitive]-CMD[4].yaml===
+
+
+ID: 10 === Executing TEST of the test case: OVS_VPORT_ATTR_UPCALL_PID[ObjPrimitive]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 58, 'attrs': [('OVS_VPORT_ATTR_UPCALL_PID', 100)], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 25168958, 'length': 36}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 11 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_IFINDEX[NumOverflowInt]-CMD[1].yaml===
+
+
+ID: 11 === Executing TEST of the test case: OVS_VPORT_ATTR_IFINDEX[NumOverflowInt]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 59, 'attrs': [('OVS_VPORT_ATTR_IFINDEX', 2147484647), ('OVS_VPORT_ATTR_TYPE', 1), ('OVS_VPORT_ATTR_NAME', 'vport1'), ('OVS_VPORT_ATTR_UPCALL_PID', [25168958])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 8391742, 'length': 72}}
+Netlink Error Code: 95
+Netlink Error Message: Operation not supported
+Reply Message: None
+
+
+ID: 12 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_IFINDEX[NumMaxInt]-CMD[1].yaml===
+
+
+ID: 12 === Executing TEST of the test case: OVS_VPORT_ATTR_IFINDEX[NumMaxInt]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 60, 'attrs': [('OVS_VPORT_ATTR_IFINDEX', 2147483647), ('OVS_VPORT_ATTR_TYPE', 1), ('OVS_VPORT_ATTR_NAME', 'vport1'), ('OVS_VPORT_ATTR_UPCALL_PID', [25168958])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 8391742, 'length': 72}}
+Netlink Error Code: 95
+Netlink Error Message: Operation not supported
+Reply Message: None
+
+
+ID: 13 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_OPTIONS[ObjCommon]-CMD[4].yaml===
+
+
+ID: 13 === Executing TEST of the test case: OVS_VPORT_ATTR_OPTIONS[ObjCommon]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 61, 'attrs': [('OVS_VPORT_ATTR_OPTIONS', [])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 8391742, 'length': 28}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 14 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_IFINDEX[NumUnderflowInt]-CMD[1].yaml===
+
+
+ID: 14 === Executing TEST of the test case: OVS_VPORT_ATTR_IFINDEX[NumUnderflowInt]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 62, 'attrs': [('OVS_VPORT_ATTR_IFINDEX', -2147484648), ('OVS_VPORT_ATTR_TYPE', 1), ('OVS_VPORT_ATTR_NAME', 'vport1'), ('OVS_VPORT_ATTR_UPCALL_PID', [25168958])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 8391742, 'length': 72}}
+Netlink Error Code: 95
+Netlink Error Message: Operation not supported
+Reply Message: None
+
+
+ID: 15 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_PORT_NO[NumMinUint]-CMD[1].yaml===
+
+
+ID: 15 === Executing TEST of the test case: OVS_VPORT_ATTR_PORT_NO[NumMinUint]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 63, 'attrs': [('OVS_VPORT_ATTR_PORT_NO', 0), ('OVS_VPORT_ATTR_TYPE', 1), ('OVS_VPORT_ATTR_NAME', 'vport1'), ('OVS_VPORT_ATTR_UPCALL_PID', [25168958])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 8391742, 'length': 72}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 8391742, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 16 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_TYPE[NumUnderflowUint]-CMD[1].yaml===
+
+
+ID: 16 === Executing TEST of the test case: OVS_VPORT_ATTR_TYPE[NumUnderflowUint]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 64, 'attrs': [('OVS_VPORT_ATTR_TYPE', -1000), ('OVS_VPORT_ATTR_NAME', 'vport1'), ('OVS_VPORT_ATTR_UPCALL_PID', [29363262])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 20974654, 'length': 60}}
+Netlink Error Code: 97
+Netlink Error Message: Address family not supported by protocol
+Reply Message: None
+
+
+ID: 17 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_UPCALL_PID[ObjCommon]-CMD[4].yaml===
+
+
+ID: 17 === Executing TEST of the test case: OVS_VPORT_ATTR_UPCALL_PID[ObjCommon]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 65, 'attrs': [('OVS_VPORT_ATTR_UPCALL_PID', [])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 20974654, 'length': 28}}
+Netlink Error Code: 34
+Netlink Error Message: Numerical result out of range
+Reply Message: None
+
+
+ID: 18 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_NAME[StrOverflow]-CMD[1].yaml===
+
+
+ID: 18 === Executing TEST of the test case: OVS_VPORT_ATTR_NAME[StrOverflow]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 66, 'attrs': [('OVS_VPORT_ATTR_NAME', 'Dolorem amet quaerat est quiquia quisquam. Ut aliquam labore dolor non dolorem. Modi dolorem dolorem aliquam magnam tempora aliquam. Consectetur labore sit porro. Labore labore eius magnam neque aliquam amet. Velit ut labore voluptatem porro. Etincidunt quisquam quaerat est ut.'), ('OVS_VPORT_ATTR_TYPE', 1), ('OVS_VPORT_ATTR_UPCALL_PID', [29363262])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 20974654, 'length': 332}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 19 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_IFINDEX[NumMinInt]-CMD[1].yaml===
+
+
+ID: 19 === Executing TEST of the test case: OVS_VPORT_ATTR_IFINDEX[NumMinInt]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 67, 'attrs': [('OVS_VPORT_ATTR_IFINDEX', -2147483648), ('OVS_VPORT_ATTR_TYPE', 1), ('OVS_VPORT_ATTR_NAME', 'vport1'), ('OVS_VPORT_ATTR_UPCALL_PID', [29363262])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 20974654, 'length': 72}}
+Netlink Error Code: 95
+Netlink Error Message: Operation not supported
+Reply Message: None
+
+
+ID: 20 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_PORT_NO[NumUnderflowUint]-CMD[1].yaml===
+
+
+ID: 20 === Executing TEST of the test case: OVS_VPORT_ATTR_PORT_NO[NumUnderflowUint]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 68, 'attrs': [('OVS_VPORT_ATTR_PORT_NO', -1000), ('OVS_VPORT_ATTR_TYPE', 1), ('OVS_VPORT_ATTR_NAME', 'vport1'), ('OVS_VPORT_ATTR_UPCALL_PID', [29363262])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 20974654, 'length': 72}}
+Netlink Error Code: 27
+Netlink Error Message: File too large
+Reply Message: None
+
+
+ID: 21 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_OPTIONS[ObjPrimitive]-CMD[1].yaml===
+
+
+ID: 21 === Executing TEST of the test case: OVS_VPORT_ATTR_OPTIONS[ObjPrimitive]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 69, 'attrs': [('OVS_VPORT_ATTR_OPTIONS', 100), ('OVS_VPORT_ATTR_TYPE', 1), ('OVS_VPORT_ATTR_NAME', 'vport1'), ('OVS_VPORT_ATTR_UPCALL_PID', [29363262])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 20974654, 'length': 64}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 20974654, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 22 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_NAME[Null]-CMD[1].yaml===
+
+
+ID: 22 === Executing TEST of the test case: OVS_VPORT_ATTR_NAME[Null]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 70, 'attrs': [('OVS_VPORT_ATTR_NAME', None), ('OVS_VPORT_ATTR_TYPE', 1), ('OVS_VPORT_ATTR_UPCALL_PID', [29363262])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 8391742, 'length': 52}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 23 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_TYPE[NumMinUint]-CMD[4].yaml===
+
+
+ID: 23 === Executing TEST of the test case: OVS_VPORT_ATTR_TYPE[NumMinUint]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 71, 'attrs': [('OVS_VPORT_ATTR_TYPE', 0)], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 8391742, 'length': 36}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 24 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_OPTIONS[ObjPrimitive]-CMD[4].yaml===
+
+
+ID: 24 === Executing TEST of the test case: OVS_VPORT_ATTR_OPTIONS[ObjPrimitive]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 72, 'attrs': [('OVS_VPORT_ATTR_OPTIONS', 100)], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 8391742, 'length': 28}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 25 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_NAME[StrNonPrintable]-CMD[1].yaml===
+
+
+ID: 25 === Executing TEST of the test case: OVS_VPORT_ATTR_NAME[StrNonPrintable]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 73, 'attrs': [('OVS_VPORT_ATTR_NAME', 'ab\ncd\t'), ('OVS_VPORT_ATTR_TYPE', 1), ('OVS_VPORT_ATTR_UPCALL_PID', [29363262])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 8391742, 'length': 60}}
+Netlink Error Code: 19
+Netlink Error Message: No such device
+Reply Message: None
+
+
+ID: 26 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_TYPE[NumUnderflowUint]-CMD[4].yaml===
+
+
+ID: 26 === Executing TEST of the test case: OVS_VPORT_ATTR_TYPE[NumUnderflowUint]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 74, 'attrs': [('OVS_VPORT_ATTR_TYPE', -1000)], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 8391742, 'length': 36}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 27 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_PORT_NO[Null]-CMD[1].yaml===
+
+
+ID: 27 === Executing TEST of the test case: OVS_VPORT_ATTR_PORT_NO[Null]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 75, 'attrs': [('OVS_VPORT_ATTR_PORT_NO', None), ('OVS_VPORT_ATTR_TYPE', 1), ('OVS_VPORT_ATTR_NAME', 'vport1'), ('OVS_VPORT_ATTR_UPCALL_PID', [29363262])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 8391742, 'length': 64}}
+Netlink Error Code: 34
+Netlink Error Message: Numerical result out of range
+Reply Message: None
+
+
+ID: 28 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_TYPE[NumOverflowUint]-CMD[1].yaml===
+
+
+ID: 28 === Executing TEST of the test case: OVS_VPORT_ATTR_TYPE[NumOverflowUint]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 76, 'attrs': [('OVS_VPORT_ATTR_TYPE', 4294968295), ('OVS_VPORT_ATTR_NAME', 'vport1'), ('OVS_VPORT_ATTR_UPCALL_PID', [29363262])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 8391742, 'length': 60}}
+Netlink Error Code: 97
+Netlink Error Message: Address family not supported by protocol
+Reply Message: None
+
+
+ID: 29 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_PORT_NO[NumMaxUint]-CMD[1].yaml===
+
+
+ID: 29 === Executing TEST of the test case: OVS_VPORT_ATTR_PORT_NO[NumMaxUint]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 77, 'attrs': [('OVS_VPORT_ATTR_PORT_NO', 4294967295), ('OVS_VPORT_ATTR_TYPE', 1), ('OVS_VPORT_ATTR_NAME', 'vport1'), ('OVS_VPORT_ATTR_UPCALL_PID', [29363262])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 8391742, 'length': 72}}
+Netlink Error Code: 27
+Netlink Error Message: File too large
+Reply Message: None
+
+
+ID: 30 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_TYPE[NumMinUint]-CMD[1].yaml===
+
+
+ID: 30 === Executing TEST of the test case: OVS_VPORT_ATTR_TYPE[NumMinUint]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 78, 'attrs': [('OVS_VPORT_ATTR_TYPE', 0), ('OVS_VPORT_ATTR_NAME', 'vport1'), ('OVS_VPORT_ATTR_UPCALL_PID', [29363262])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 8391742, 'length': 60}}
+Netlink Error Code: 97
+Netlink Error Message: Address family not supported by protocol
+Reply Message: None
+
+
+ID: 31 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_OPTIONS[Null]-CMD[1].yaml===
+
+
+ID: 31 === Executing TEST of the test case: OVS_VPORT_ATTR_OPTIONS[Null]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 79, 'attrs': [('OVS_VPORT_ATTR_OPTIONS', None), ('OVS_VPORT_ATTR_TYPE', 1), ('OVS_VPORT_ATTR_NAME', 'vport1'), ('OVS_VPORT_ATTR_UPCALL_PID', [29363262])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 8391742, 'length': 64}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'error': 0, 'attrs': [('NLMSGERR_ATTR_UNUSED', None)], 'header': {'length': 36, 'type': 2, 'flags': 256, 'sequence_number': 255, 'pid': 8391742, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}, 'event': 'NLMSG_ERROR'}
+
+
+ID: 32 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_TYPE[NumOverflowUint]-CMD[4].yaml===
+
+
+ID: 32 === Executing TEST of the test case: OVS_VPORT_ATTR_TYPE[NumOverflowUint]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 80, 'attrs': [('OVS_VPORT_ATTR_TYPE', 4294968295)], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 8391742, 'length': 36}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 33 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_TYPE[Null]-CMD[4].yaml===
+
+
+ID: 33 === Executing TEST of the test case: OVS_VPORT_ATTR_TYPE[Null]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 81, 'attrs': [('OVS_VPORT_ATTR_TYPE', None)], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 8391742, 'length': 28}}
+Netlink Error Code: 34
+Netlink Error Message: Numerical result out of range
+Reply Message: None
+
+
+ID: 34 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_NAME[StrNonAscii]-CMD[1].yaml===
+
+
+ID: 34 === Executing TEST of the test case: OVS_VPORT_ATTR_NAME[StrNonAscii]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 82, 'attrs': [('OVS_VPORT_ATTR_NAME', 'dp-test-çáãËÆ'), ('OVS_VPORT_ATTR_TYPE', 1), ('OVS_VPORT_ATTR_UPCALL_PID', [16780350])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 8391742, 'length': 72}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 35 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_TYPE[Null]-CMD[1].yaml===
+
+
+ID: 35 === Executing TEST of the test case: OVS_VPORT_ATTR_TYPE[Null]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 83, 'attrs': [('OVS_VPORT_ATTR_TYPE', None), ('OVS_VPORT_ATTR_NAME', 'vport1'), ('OVS_VPORT_ATTR_UPCALL_PID', [25168958])], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 12586046, 'length': 52}}
+Netlink Error Code: 34
+Netlink Error Message: Numerical result out of range
+Reply Message: None
+
+
+ID: 36 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_UPCALL_PID[Null]-CMD[4].yaml===
+
+
+ID: 36 === Executing TEST of the test case: OVS_VPORT_ATTR_UPCALL_PID[Null]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 84, 'attrs': [('OVS_VPORT_ATTR_UPCALL_PID', None)], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 25168958, 'length': 28}}
+Netlink Error Code: 34
+Netlink Error Message: Numerical result out of range
+Reply Message: None
+
+
+ID: 37 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_TYPE[NumMaxUint]-CMD[4].yaml===
+
+
+ID: 37 === Executing TEST of the test case: OVS_VPORT_ATTR_TYPE[NumMaxUint]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 85, 'attrs': [('OVS_VPORT_ATTR_TYPE', 4294967295)], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 25168958, 'length': 36}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 38 === Executing PRE_TEST of the test case: OVS_VPORT_ATTR_UPCALL_PID[ObjCommon]-CMD[1].yaml===
+
+
+ID: 38 === Executing TEST of the test case: OVS_VPORT_ATTR_UPCALL_PID[ObjCommon]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 86, 'attrs': [('OVS_VPORT_ATTR_UPCALL_PID', []), ('OVS_VPORT_ATTR_TYPE', 1), ('OVS_VPORT_ATTR_NAME', 'vport1')], 'header': {'type': 29, 'flags': 5, 'sequence_number': 255, 'pid': 25168958, 'length': 52}}
+Netlink Error Code: 34
+Netlink Error Message: Numerical result out of range
+Reply Message: None

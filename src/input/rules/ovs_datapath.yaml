@@ -1,0 +1,50 @@
+generic_netlink_family:
+  name: ovs_datapath
+  cmd_range:
+    min: 1
+    max: 4
+  cmd_requires_pre_test:
+    - 2
+    - 3
+    - 4
+    - 5
+  attributes:
+    - name: OVS_DP_ATTR_NAME
+      type: string
+      supported_by:
+        - 1
+        - 2
+        - 3
+        - 4
+    - name: OVS_DP_ATTR_UPCALL_PID
+      type: uint
+      supported_by:
+        - 1
+    - name: OVS_DP_ATTR_STATS
+      type: object
+      supported_by: []
+    - name: OVS_DP_ATTR_MEGAFLOW_STATS
+      type: object
+      supported_by: []
+    - name: OVS_DP_ATTR_USER_FEATURES
+      type: uint
+      supported_by:
+        - 1
+        - 4
+    - name: OVS_DP_ATTR_PAD
+      type: ulong
+      supported_by: []
+    - name: OVS_DP_ATTR_MASKS_CACHE_SIZE
+      type: uint
+      supported_by:
+        - 1
+        - 4
+    - name: OVS_DP_ATTR_PER_CPU_PIDS
+      type: object
+      supported_by:
+        - 1
+        - 4
+    - name: OVS_DP_ATTR_IFINDEX
+      type: uint
+      supported_by:
+        - 1

@@ -1,0 +1,110 @@
+
+
+ID: 1 === Executing PRE_TEST of the test case: OVS_CT_LIMIT_ATTR_ZONE_LIMIT[Null]-CMD[3].yaml===
+
+
+ID: 1 === Executing TEST of the test case: OVS_CT_LIMIT_ATTR_ZONE_LIMIT[Null]-CMD[3].yaml===
+
+Message sent: {'cmd': 3, 'version': 2, 'reserved': 0, 'dpifindex': 199, 'attrs': [('OVS_CT_LIMIT_ATTR_ZONE_LIMIT', None)], 'header': {'type': 321, 'flags': 1, 'sequence_number': 255, 'pid': 8396896, 'length': 28}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'cmd': 3, 'version': 1, 'reserved': 0, 'dpifindex': 199, 'attrs': [('UNKNOWN', {'header': {'length': 16, 'type': 1}})], 'header': {'length': 40, 'type': 321, 'flags': 0, 'sequence_number': 255, 'pid': 8396896, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}}
+
+
+ID: 2 === Executing PRE_TEST of the test case: OVS_CT_LIMIT_ATTR_ZONE_LIMIT[ObjPrimitive]-CMD[3].yaml===
+
+
+ID: 2 === Executing TEST of the test case: OVS_CT_LIMIT_ATTR_ZONE_LIMIT[ObjPrimitive]-CMD[3].yaml===
+
+Message sent: {'cmd': 3, 'version': 2, 'reserved': 0, 'dpifindex': 200, 'attrs': [('OVS_CT_LIMIT_ATTR_ZONE_LIMIT', 100)], 'header': {'type': 327, 'flags': 1, 'sequence_number': 255, 'pid': 16785504, 'length': 40}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'cmd': 3, 'version': 1, 'reserved': 0, 'dpifindex': 200, 'attrs': [('UNKNOWN', {'header': {'length': 16, 'type': 1}})], 'header': {'length': 40, 'type': 327, 'flags': 0, 'sequence_number': 255, 'pid': 16785504, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}}
+
+
+ID: 3 === Executing PRE_TEST of the test case: test-1.yaml===
+
+
+ID: 3 === Executing TEST of the test case: test-1.yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 201, 'attrs': [('OVS_CT_LIMIT_ATTR_ZONE_LIMIT', {'zone_id': 1, 'limit': 2, 'count': 10, 'attrs': [], 'header': {'type': 0, 'length': 16}})], 'header': {'type': 333, 'flags': 5, 'sequence_number': 255, 'pid': 16785504, 'length': 40}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 4 === Executing PRE_TEST of the test case: OVS_CT_LIMIT_ATTR_ZONE_LIMIT[ObjCommon]-CMD[3].yaml===
+
+
+ID: 4 === Executing TEST of the test case: OVS_CT_LIMIT_ATTR_ZONE_LIMIT[ObjCommon]-CMD[3].yaml===
+
+Message sent: {'cmd': 3, 'version': 2, 'reserved': 0, 'dpifindex': 202, 'attrs': [('OVS_CT_LIMIT_ATTR_ZONE_LIMIT', [])], 'header': {'type': 339, 'flags': 1, 'sequence_number': 255, 'pid': 25174112, 'length': 40}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'cmd': 3, 'version': 1, 'reserved': 0, 'dpifindex': 202, 'attrs': [('UNKNOWN', {'header': {'length': 16, 'type': 1}})], 'header': {'length': 40, 'type': 339, 'flags': 0, 'sequence_number': 255, 'pid': 25174112, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}}
+
+
+ID: 5 === Executing PRE_TEST of the test case: OVS_CT_LIMIT_ATTR_ZONE_LIMIT[ObjCommon]-CMD[2].yaml===
+
+
+ID: 5 === Executing TEST of the test case: OVS_CT_LIMIT_ATTR_ZONE_LIMIT[ObjCommon]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 203, 'attrs': [('OVS_CT_LIMIT_ATTR_ZONE_LIMIT', [])], 'header': {'type': 345, 'flags': 1, 'sequence_number': 255, 'pid': 25174112, 'length': 40}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 6 === Executing PRE_TEST of the test case: OVS_CT_LIMIT_ATTR_ZONE_LIMIT[Null]-CMD[1].yaml===
+
+
+ID: 6 === Executing TEST of the test case: OVS_CT_LIMIT_ATTR_ZONE_LIMIT[Null]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 204, 'attrs': [('OVS_CT_LIMIT_ATTR_ZONE_LIMIT', None)], 'header': {'type': 351, 'flags': 5, 'sequence_number': 255, 'pid': 8396896, 'length': 28}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 7 === Executing PRE_TEST of the test case: OVS_CT_LIMIT_ATTR_ZONE_LIMIT[Null]-CMD[2].yaml===
+
+
+ID: 7 === Executing TEST of the test case: OVS_CT_LIMIT_ATTR_ZONE_LIMIT[Null]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 205, 'attrs': [('OVS_CT_LIMIT_ATTR_ZONE_LIMIT', None)], 'header': {'type': 357, 'flags': 1, 'sequence_number': 255, 'pid': 12591200, 'length': 28}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 8 === Executing PRE_TEST of the test case: OVS_CT_LIMIT_ATTR_ZONE_LIMIT[ObjCommon]-CMD[1].yaml===
+
+
+ID: 8 === Executing TEST of the test case: OVS_CT_LIMIT_ATTR_ZONE_LIMIT[ObjCommon]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 206, 'attrs': [('OVS_CT_LIMIT_ATTR_ZONE_LIMIT', [])], 'header': {'type': 363, 'flags': 5, 'sequence_number': 255, 'pid': 12591200, 'length': 40}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 9 === Executing PRE_TEST of the test case: OVS_CT_LIMIT_ATTR_ZONE_LIMIT[ObjPrimitive]-CMD[2].yaml===
+
+
+ID: 9 === Executing TEST of the test case: OVS_CT_LIMIT_ATTR_ZONE_LIMIT[ObjPrimitive]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 207, 'attrs': [('OVS_CT_LIMIT_ATTR_ZONE_LIMIT', 100)], 'header': {'type': 369, 'flags': 1, 'sequence_number': 255, 'pid': 12591200, 'length': 40}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None
+
+
+ID: 10 === Executing PRE_TEST of the test case: OVS_CT_LIMIT_ATTR_ZONE_LIMIT[ObjPrimitive]-CMD[1].yaml===
+
+
+ID: 10 === Executing TEST of the test case: OVS_CT_LIMIT_ATTR_ZONE_LIMIT[ObjPrimitive]-CMD[1].yaml===
+
+Message sent: {'cmd': 1, 'version': 2, 'reserved': 0, 'dpifindex': 208, 'attrs': [('OVS_CT_LIMIT_ATTR_ZONE_LIMIT', 100)], 'header': {'type': 375, 'flags': 5, 'sequence_number': 255, 'pid': 12591200, 'length': 40}}
+Netlink Error Code: 22
+Netlink Error Message: Invalid argument
+Reply Message: None

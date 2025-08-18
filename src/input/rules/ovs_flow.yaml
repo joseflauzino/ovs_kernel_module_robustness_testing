@@ -1,0 +1,67 @@
+generic_netlink_family:
+  name: ovs_flow
+  cmd_range:
+    min: 1
+    max: 4
+  cmd_requires_pre_test:
+    - 1
+    - 2
+    - 3
+    - 4
+  attributes:
+    - name: OVS_FLOW_ATTR_KEY
+      type: object
+      supported_by:
+        - 1
+        - 2
+        - 3
+        - 4
+    - name: OVS_FLOW_ATTR_ACTIONS
+      type: object
+      supported_by:
+        - 1
+        - 4
+    - name: OVS_FLOW_ATTR_STATS
+      type: object
+      supported_by: []
+    - name: OVS_FLOW_ATTR_TCP_FLAGS
+      type: uint8
+      supported_by: []
+    - name: OVS_FLOW_ATTR_USED
+      type: ulong
+      supported_by: []
+    - name: OVS_FLOW_ATTR_CLEAR
+      type: int
+      supported_by:
+        - 4
+    - name: OVS_FLOW_ATTR_MASK
+      type: object
+      supported_by:
+        - 1
+        - 2
+        - 3
+        - 4
+    - name: OVS_FLOW_ATTR_PROBE
+      type: uint8
+      supported_by:
+        - 1
+        - 2
+        - 3
+        - 4
+    - name: OVS_FLOW_ATTR_UFID
+      type: object
+      supported_by:
+        - 1
+        - 2
+        - 3
+        - 4
+    - name: OVS_FLOW_ATTR_UFID_FLAGS
+      type: uint
+      supported_by:
+        - 1
+        - 2
+        - 3
+        - 4
+    - name: OVS_FLOW_ATTR_PAD
+      type: int
+      supported_by: []

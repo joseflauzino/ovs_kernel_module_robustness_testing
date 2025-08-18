@@ -1,0 +1,7 @@
+pre_test:
+    script_name: ovs_meter_pre_tests.sh
+test:
+    command: 2
+    gnl_atts:
+    -   OVS_METER_ATTR_ID: NumUnderflowUint
+    gnl_family_name: ovs_meter

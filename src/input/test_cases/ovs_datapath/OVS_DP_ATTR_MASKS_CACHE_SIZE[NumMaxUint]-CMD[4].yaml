@@ -1,0 +1,7 @@
+pre_test:
+    script_name: ovs_datapath_pre_tests.sh
+test:
+    command: 4
+    gnl_atts:
+    -   OVS_DP_ATTR_MASKS_CACHE_SIZE: NumMaxUint
+    gnl_family_name: ovs_datapath

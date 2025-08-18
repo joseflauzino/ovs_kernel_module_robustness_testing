@@ -1,0 +1,7 @@
+pre_test:
+    script_name: ovs_ct_limit_pre_tests.sh
+test:
+    command: 2
+    gnl_atts:
+    -   OVS_CT_LIMIT_ATTR_ZONE_LIMIT: ObjCommon
+    gnl_family_name: ovs_ct_limit

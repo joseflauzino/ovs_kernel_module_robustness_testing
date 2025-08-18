@@ -1,0 +1,44 @@
+generic_netlink_family:
+  name: ovs_meter
+  cmd_range:
+    min: 1
+    max: 4
+  cmd_requires_pre_test:
+    - 2
+    - 3
+    - 4
+  attributes:
+    - name: OVS_METER_ATTR_ID
+      type: uint
+      supported_by:
+        - 2
+        - 3
+        - 4
+    - name: OVS_METER_ATTR_KBPS
+      type: uint
+      supported_by:
+        - 2
+    - name: OVS_METER_ATTR_STATS
+      type: object
+      supported_by:
+        - 2
+    - name: OVS_METER_ATTR_BANDS
+      type: object
+      supported_by:
+        - 2
+    - name: OVS_METER_ATTR_USED
+      type: uint64
+      supported_by: []
+    - name: OVS_METER_ATTR_CLEAR
+      type: uint
+      supported_by:
+        - 2
+    - name: OVS_METER_ATTR_MAX_METERS
+      type: uint
+      supported_by: []
+    - name: OVS_METER_ATTR_MAX_BANDS
+      type: uint
+      supported_by: []
+    - name: OVS_METER_ATTR_PAD
+      type: uint
+      supported_by: []

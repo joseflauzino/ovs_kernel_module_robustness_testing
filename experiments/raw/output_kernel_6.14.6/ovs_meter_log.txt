@@ -1,0 +1,341 @@
+
+
+ID: 1 === Executing PRE_TEST of the test case: OVS_METER_ATTR_STATS[Null]-CMD[2].yaml===
+
+
+ID: 1 === Executing TEST of the test case: OVS_METER_ATTR_STATS[Null]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 195, 'attrs': [('OVS_METER_ATTR_STATS', None), ('OVS_METER_ATTR_ID', 1), ('OVS_METER_ATTR_BANDS', [{'attrs': [['OVS_BAND_ATTR_TYPE', 100], ['OVS_BAND_ATTR_RATE', 1265], ['OVS_BAND_ATTR_BURST', 200], ['OVS_BAND_ATTR_STATS', {'packets': 50, 'bytes': 2546, 'attrs': [], 'header': {}}]], 'header': {}}])], 'header': {'type': 487, 'flags': 5, 'sequence_number': 255, 'pid': 8397006, 'length': 44}}
+Netlink Error Code: 34
+Netlink Error Message: Numerical result out of range
+Reply Message: None
+
+
+ID: 2 === Executing PRE_TEST of the test case: OVS_METER_ATTR_ID[NumMaxUint]-CMD[4].yaml===
+
+
+ID: 2 === Executing TEST of the test case: OVS_METER_ATTR_ID[NumMaxUint]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 196, 'attrs': [('OVS_METER_ATTR_ID', 4294967295)], 'header': {'type': 494, 'flags': 1, 'sequence_number': 255, 'pid': 8397006, 'length': 36}}
+Netlink Error Code: 2
+Netlink Error Message: No such file or directory
+Reply Message: None
+
+
+ID: 3 === Executing PRE_TEST of the test case: OVS_METER_ATTR_ID[Null]-CMD[4].yaml===
+
+
+ID: 3 === Executing TEST of the test case: OVS_METER_ATTR_ID[Null]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 197, 'attrs': [('OVS_METER_ATTR_ID', None)], 'header': {'type': 501, 'flags': 1, 'sequence_number': 255, 'pid': 8397006, 'length': 28}}
+Netlink Error Code: 34
+Netlink Error Message: Numerical result out of range
+Reply Message: None
+
+
+ID: 4 === Executing PRE_TEST of the test case: OVS_METER_ATTR_BANDS[ObjCommon]-CMD[2].yaml===
+
+
+ID: 4 === Executing TEST of the test case: OVS_METER_ATTR_BANDS[ObjCommon]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 198, 'attrs': [('OVS_METER_ATTR_BANDS', []), ('OVS_METER_ATTR_ID', 1)], 'header': {'type': 508, 'flags': 5, 'sequence_number': 255, 'pid': 8397006, 'length': 40}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'cmd': 2, 'version': 1, 'reserved': 0, 'dpifindex': 198, 'attrs': [('OVS_METER_ATTR_ID', b'\x08\x00\x01\x00\x01\x00\x00\x00')], 'header': {'length': 32, 'type': 508, 'flags': 0, 'sequence_number': 255, 'pid': 8397006, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}}
+
+
+ID: 5 === Executing PRE_TEST of the test case: OVS_METER_ATTR_ID[Null]-CMD[2].yaml===
+
+
+ID: 5 === Executing TEST of the test case: OVS_METER_ATTR_ID[Null]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 199, 'attrs': [('OVS_METER_ATTR_ID', None), ('OVS_METER_ATTR_BANDS', [{'attrs': [['OVS_BAND_ATTR_TYPE', 100], ['OVS_BAND_ATTR_RATE', 1265], ['OVS_BAND_ATTR_BURST', 200], ['OVS_BAND_ATTR_STATS', {'packets': 50, 'bytes': 2546, 'attrs': [], 'header': {}}]], 'header': {}}])], 'header': {'type': 515, 'flags': 5, 'sequence_number': 255, 'pid': 8397006, 'length': 32}}
+Netlink Error Code: 34
+Netlink Error Message: Numerical result out of range
+Reply Message: None
+
+
+ID: 6 === Executing PRE_TEST of the test case: OVS_METER_ATTR_BANDS[Null]-CMD[2].yaml===
+
+
+ID: 6 === Executing TEST of the test case: OVS_METER_ATTR_BANDS[Null]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 200, 'attrs': [('OVS_METER_ATTR_BANDS', None), ('OVS_METER_ATTR_ID', 1)], 'header': {'type': 522, 'flags': 5, 'sequence_number': 255, 'pid': 8397006, 'length': 40}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'cmd': 2, 'version': 1, 'reserved': 0, 'dpifindex': 200, 'attrs': [('OVS_METER_ATTR_ID', b'\x08\x00\x01\x00\x01\x00\x00\x00')], 'header': {'length': 32, 'type': 522, 'flags': 0, 'sequence_number': 255, 'pid': 8397006, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}}
+
+
+ID: 7 === Executing PRE_TEST of the test case: OVS_METER_ATTR_ID[NumUnderflowUint]-CMD[4].yaml===
+
+
+ID: 7 === Executing TEST of the test case: OVS_METER_ATTR_ID[NumUnderflowUint]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 201, 'attrs': [('OVS_METER_ATTR_ID', -1000)], 'header': {'type': 529, 'flags': 1, 'sequence_number': 255, 'pid': 8397006, 'length': 36}}
+Netlink Error Code: 2
+Netlink Error Message: No such file or directory
+Reply Message: None
+
+
+ID: 8 === Executing PRE_TEST of the test case: OVS_METER_ATTR_KBPS[NumMinUint]-CMD[2].yaml===
+
+
+ID: 8 === Executing TEST of the test case: OVS_METER_ATTR_KBPS[NumMinUint]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 202, 'attrs': [('OVS_METER_ATTR_KBPS', 0), ('OVS_METER_ATTR_ID', 1), ('OVS_METER_ATTR_BANDS', [{'attrs': [['OVS_BAND_ATTR_TYPE', 100], ['OVS_BAND_ATTR_RATE', 1265], ['OVS_BAND_ATTR_BURST', 200], ['OVS_BAND_ATTR_STATS', {'packets': 50, 'bytes': 2546, 'attrs': [], 'header': {}}]], 'header': {}}])], 'header': {'type': 536, 'flags': 5, 'sequence_number': 255, 'pid': 8397006, 'length': 52}}
+Netlink Error Code: 34
+Netlink Error Message: Numerical result out of range
+Reply Message: None
+
+
+ID: 9 === Executing PRE_TEST of the test case: OVS_METER_ATTR_CLEAR[NumMaxUint]-CMD[2].yaml===
+
+
+ID: 9 === Executing TEST of the test case: OVS_METER_ATTR_CLEAR[NumMaxUint]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 203, 'attrs': [('OVS_METER_ATTR_CLEAR', 4294967295), ('OVS_METER_ATTR_ID', 1), ('OVS_METER_ATTR_BANDS', [{'attrs': [['OVS_BAND_ATTR_TYPE', 100], ['OVS_BAND_ATTR_RATE', 1265], ['OVS_BAND_ATTR_BURST', 200], ['OVS_BAND_ATTR_STATS', {'packets': 50, 'bytes': 2546, 'attrs': [], 'header': {}}]], 'header': {}}])], 'header': {'type': 543, 'flags': 5, 'sequence_number': 255, 'pid': 8397006, 'length': 52}}
+Netlink Error Code: 34
+Netlink Error Message: Numerical result out of range
+Reply Message: None
+
+
+ID: 10 === Executing PRE_TEST of the test case: OVS_METER_ATTR_ID[NumMinUint]-CMD[2].yaml===
+
+
+ID: 10 === Executing TEST of the test case: OVS_METER_ATTR_ID[NumMinUint]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 204, 'attrs': [('OVS_METER_ATTR_ID', 0), ('OVS_METER_ATTR_BANDS', [{'attrs': [['OVS_BAND_ATTR_TYPE', 100], ['OVS_BAND_ATTR_RATE', 1265], ['OVS_BAND_ATTR_BURST', 200], ['OVS_BAND_ATTR_STATS', {'packets': 50, 'bytes': 2546, 'attrs': [], 'header': {}}]], 'header': {}}])], 'header': {'type': 550, 'flags': 5, 'sequence_number': 255, 'pid': 8397006, 'length': 40}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'cmd': 2, 'version': 1, 'reserved': 0, 'dpifindex': 204, 'attrs': [('OVS_METER_ATTR_ID', b'\x08\x00\x01\x00\x00\x00\x00\x00')], 'header': {'length': 32, 'type': 550, 'flags': 0, 'sequence_number': 255, 'pid': 8397006, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}}
+
+
+ID: 11 === Executing PRE_TEST of the test case: OVS_METER_ATTR_CLEAR[NumMinUint]-CMD[2].yaml===
+
+
+ID: 11 === Executing TEST of the test case: OVS_METER_ATTR_CLEAR[NumMinUint]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 205, 'attrs': [('OVS_METER_ATTR_CLEAR', 0), ('OVS_METER_ATTR_ID', 1), ('OVS_METER_ATTR_BANDS', [{'attrs': [['OVS_BAND_ATTR_TYPE', 100], ['OVS_BAND_ATTR_RATE', 1265], ['OVS_BAND_ATTR_BURST', 200], ['OVS_BAND_ATTR_STATS', {'packets': 50, 'bytes': 2546, 'attrs': [], 'header': {}}]], 'header': {}}])], 'header': {'type': 557, 'flags': 5, 'sequence_number': 255, 'pid': 8397006, 'length': 52}}
+Netlink Error Code: 34
+Netlink Error Message: Numerical result out of range
+Reply Message: None
+
+
+ID: 12 === Executing PRE_TEST of the test case: OVS_METER_ATTR_STATS[ObjCommon]-CMD[2].yaml===
+
+
+ID: 12 === Executing TEST of the test case: OVS_METER_ATTR_STATS[ObjCommon]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 206, 'attrs': [('OVS_METER_ATTR_STATS', []), ('OVS_METER_ATTR_ID', 1), ('OVS_METER_ATTR_BANDS', [{'attrs': [['OVS_BAND_ATTR_TYPE', 100], ['OVS_BAND_ATTR_RATE', 1265], ['OVS_BAND_ATTR_BURST', 200], ['OVS_BAND_ATTR_STATS', {'packets': 50, 'bytes': 2546, 'attrs': [], 'header': {}}]], 'header': {}}])], 'header': {'type': 564, 'flags': 5, 'sequence_number': 255, 'pid': 16785614, 'length': 60}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'cmd': 2, 'version': 1, 'reserved': 0, 'dpifindex': 206, 'attrs': [('OVS_METER_ATTR_ID', b'\x08\x00\x01\x00\x01\x00\x00\x00')], 'header': {'length': 32, 'type': 564, 'flags': 0, 'sequence_number': 255, 'pid': 16785614, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}}
+
+
+ID: 13 === Executing PRE_TEST of the test case: OVS_METER_ATTR_ID[NumOverflowUint]-CMD[3].yaml===
+
+
+ID: 13 === Executing TEST of the test case: OVS_METER_ATTR_ID[NumOverflowUint]-CMD[3].yaml===
+
+Message sent: {'cmd': 3, 'version': 2, 'reserved': 0, 'dpifindex': 207, 'attrs': [('OVS_METER_ATTR_ID', 4294968295)], 'header': {'type': 571, 'flags': 1, 'sequence_number': 255, 'pid': 16785614, 'length': 36}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'cmd': 3, 'version': 1, 'reserved': 0, 'dpifindex': 207, 'attrs': [], 'header': {'length': 24, 'type': 571, 'flags': 0, 'sequence_number': 255, 'pid': 16785614, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}}
+
+
+ID: 14 === Executing PRE_TEST of the test case: OVS_METER_ATTR_ID[NumMinUint]-CMD[4].yaml===
+
+
+ID: 14 === Executing TEST of the test case: OVS_METER_ATTR_ID[NumMinUint]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 208, 'attrs': [('OVS_METER_ATTR_ID', 0)], 'header': {'type': 578, 'flags': 1, 'sequence_number': 255, 'pid': 16785614, 'length': 36}}
+Netlink Error Code: 2
+Netlink Error Message: No such file or directory
+Reply Message: None
+
+
+ID: 15 === Executing PRE_TEST of the test case: OVS_METER_ATTR_ID[NumMaxUint]-CMD[2].yaml===
+
+
+ID: 15 === Executing TEST of the test case: OVS_METER_ATTR_ID[NumMaxUint]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 209, 'attrs': [('OVS_METER_ATTR_ID', 4294967295), ('OVS_METER_ATTR_BANDS', [{'attrs': [['OVS_BAND_ATTR_TYPE', 100], ['OVS_BAND_ATTR_RATE', 1265], ['OVS_BAND_ATTR_BURST', 200], ['OVS_BAND_ATTR_STATS', {'packets': 50, 'bytes': 2546, 'attrs': [], 'header': {}}]], 'header': {}}])], 'header': {'type': 585, 'flags': 5, 'sequence_number': 255, 'pid': 16785614, 'length': 40}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'cmd': 2, 'version': 1, 'reserved': 0, 'dpifindex': 209, 'attrs': [('OVS_METER_ATTR_ID', b'\x08\x00\x01\x00\xff\xff\xff\xff')], 'header': {'length': 32, 'type': 585, 'flags': 0, 'sequence_number': 255, 'pid': 16785614, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}}
+
+
+ID: 16 === Executing PRE_TEST of the test case: OVS_METER_ATTR_ID[NumUnderflowUint]-CMD[2].yaml===
+
+
+ID: 16 === Executing TEST of the test case: OVS_METER_ATTR_ID[NumUnderflowUint]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 210, 'attrs': [('OVS_METER_ATTR_ID', -1000), ('OVS_METER_ATTR_BANDS', [{'attrs': [['OVS_BAND_ATTR_TYPE', 100], ['OVS_BAND_ATTR_RATE', 1265], ['OVS_BAND_ATTR_BURST', 200], ['OVS_BAND_ATTR_STATS', {'packets': 50, 'bytes': 2546, 'attrs': [], 'header': {}}]], 'header': {}}])], 'header': {'type': 592, 'flags': 5, 'sequence_number': 255, 'pid': 16785614, 'length': 40}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'cmd': 2, 'version': 1, 'reserved': 0, 'dpifindex': 210, 'attrs': [('OVS_METER_ATTR_ID', b'\x08\x00\x01\x00\x18\xfc\xff\xff')], 'header': {'length': 32, 'type': 592, 'flags': 0, 'sequence_number': 255, 'pid': 16785614, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}}
+
+
+ID: 17 === Executing PRE_TEST of the test case: OVS_METER_ATTR_ID[NumUnderflowUint]-CMD[3].yaml===
+
+
+ID: 17 === Executing TEST of the test case: OVS_METER_ATTR_ID[NumUnderflowUint]-CMD[3].yaml===
+
+Message sent: {'cmd': 3, 'version': 2, 'reserved': 0, 'dpifindex': 211, 'attrs': [('OVS_METER_ATTR_ID', -1000)], 'header': {'type': 599, 'flags': 1, 'sequence_number': 255, 'pid': 16785614, 'length': 36}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'cmd': 3, 'version': 1, 'reserved': 0, 'dpifindex': 211, 'attrs': [], 'header': {'length': 24, 'type': 599, 'flags': 0, 'sequence_number': 255, 'pid': 16785614, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}}
+
+
+ID: 18 === Executing PRE_TEST of the test case: OVS_METER_ATTR_KBPS[NumOverflowUint]-CMD[2].yaml===
+
+
+ID: 18 === Executing TEST of the test case: OVS_METER_ATTR_KBPS[NumOverflowUint]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 212, 'attrs': [('OVS_METER_ATTR_KBPS', 4294968295), ('OVS_METER_ATTR_ID', 1), ('OVS_METER_ATTR_BANDS', [{'attrs': [['OVS_BAND_ATTR_TYPE', 100], ['OVS_BAND_ATTR_RATE', 1265], ['OVS_BAND_ATTR_BURST', 200], ['OVS_BAND_ATTR_STATS', {'packets': 50, 'bytes': 2546, 'attrs': [], 'header': {}}]], 'header': {}}])], 'header': {'type': 606, 'flags': 5, 'sequence_number': 255, 'pid': 16785614, 'length': 52}}
+Netlink Error Code: 34
+Netlink Error Message: Numerical result out of range
+Reply Message: None
+
+
+ID: 19 === Executing PRE_TEST of the test case: OVS_METER_ATTR_ID[Null]-CMD[3].yaml===
+
+
+ID: 19 === Executing TEST of the test case: OVS_METER_ATTR_ID[Null]-CMD[3].yaml===
+
+Message sent: {'cmd': 3, 'version': 2, 'reserved': 0, 'dpifindex': 213, 'attrs': [('OVS_METER_ATTR_ID', None)], 'header': {'type': 613, 'flags': 1, 'sequence_number': 255, 'pid': 20979918, 'length': 28}}
+Netlink Error Code: 34
+Netlink Error Message: Numerical result out of range
+Reply Message: None
+
+
+ID: 20 === Executing PRE_TEST of the test case: OVS_METER_ATTR_KBPS[Null]-CMD[2].yaml===
+
+
+ID: 20 === Executing TEST of the test case: OVS_METER_ATTR_KBPS[Null]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 214, 'attrs': [('OVS_METER_ATTR_KBPS', None), ('OVS_METER_ATTR_ID', 1), ('OVS_METER_ATTR_BANDS', [{'attrs': [['OVS_BAND_ATTR_TYPE', 100], ['OVS_BAND_ATTR_RATE', 1265], ['OVS_BAND_ATTR_BURST', 200], ['OVS_BAND_ATTR_STATS', {'packets': 50, 'bytes': 2546, 'attrs': [], 'header': {}}]], 'header': {}}])], 'header': {'type': 620, 'flags': 5, 'sequence_number': 255, 'pid': 20979918, 'length': 44}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'cmd': 2, 'version': 1, 'reserved': 0, 'dpifindex': 214, 'attrs': [('OVS_METER_ATTR_ID', b'\x08\x00\x01\x00\x01\x00\x00\x00')], 'header': {'length': 32, 'type': 620, 'flags': 0, 'sequence_number': 255, 'pid': 20979918, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}}
+
+
+ID: 21 === Executing PRE_TEST of the test case: OVS_METER_ATTR_ID[NumMinUint]-CMD[3].yaml===
+
+
+ID: 21 === Executing TEST of the test case: OVS_METER_ATTR_ID[NumMinUint]-CMD[3].yaml===
+
+Message sent: {'cmd': 3, 'version': 2, 'reserved': 0, 'dpifindex': 215, 'attrs': [('OVS_METER_ATTR_ID', 0)], 'header': {'type': 627, 'flags': 1, 'sequence_number': 255, 'pid': 20979918, 'length': 36}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'cmd': 3, 'version': 1, 'reserved': 0, 'dpifindex': 215, 'attrs': [], 'header': {'length': 24, 'type': 627, 'flags': 0, 'sequence_number': 255, 'pid': 20979918, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}}
+
+
+ID: 22 === Executing PRE_TEST of the test case: OVS_METER_ATTR_CLEAR[NumUnderflowUint]-CMD[2].yaml===
+
+
+ID: 22 === Executing TEST of the test case: OVS_METER_ATTR_CLEAR[NumUnderflowUint]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 216, 'attrs': [('OVS_METER_ATTR_CLEAR', -1000), ('OVS_METER_ATTR_ID', 1), ('OVS_METER_ATTR_BANDS', [{'attrs': [['OVS_BAND_ATTR_TYPE', 100], ['OVS_BAND_ATTR_RATE', 1265], ['OVS_BAND_ATTR_BURST', 200], ['OVS_BAND_ATTR_STATS', {'packets': 50, 'bytes': 2546, 'attrs': [], 'header': {}}]], 'header': {}}])], 'header': {'type': 634, 'flags': 5, 'sequence_number': 255, 'pid': 16785614, 'length': 52}}
+Netlink Error Code: 34
+Netlink Error Message: Numerical result out of range
+Reply Message: None
+
+
+ID: 23 === Executing PRE_TEST of the test case: OVS_METER_ATTR_KBPS[NumUnderflowUint]-CMD[2].yaml===
+
+
+ID: 23 === Executing TEST of the test case: OVS_METER_ATTR_KBPS[NumUnderflowUint]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 217, 'attrs': [('OVS_METER_ATTR_KBPS', -1000), ('OVS_METER_ATTR_ID', 1), ('OVS_METER_ATTR_BANDS', [{'attrs': [['OVS_BAND_ATTR_TYPE', 100], ['OVS_BAND_ATTR_RATE', 1265], ['OVS_BAND_ATTR_BURST', 200], ['OVS_BAND_ATTR_STATS', {'packets': 50, 'bytes': 2546, 'attrs': [], 'header': {}}]], 'header': {}}])], 'header': {'type': 641, 'flags': 5, 'sequence_number': 255, 'pid': 16785614, 'length': 52}}
+Netlink Error Code: 34
+Netlink Error Message: Numerical result out of range
+Reply Message: None
+
+
+ID: 24 === Executing PRE_TEST of the test case: OVS_METER_ATTR_ID[NumOverflowUint]-CMD[2].yaml===
+
+
+ID: 24 === Executing TEST of the test case: OVS_METER_ATTR_ID[NumOverflowUint]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 218, 'attrs': [('OVS_METER_ATTR_ID', 4294968295), ('OVS_METER_ATTR_BANDS', [{'attrs': [['OVS_BAND_ATTR_TYPE', 100], ['OVS_BAND_ATTR_RATE', 1265], ['OVS_BAND_ATTR_BURST', 200], ['OVS_BAND_ATTR_STATS', {'packets': 50, 'bytes': 2546, 'attrs': [], 'header': {}}]], 'header': {}}])], 'header': {'type': 648, 'flags': 5, 'sequence_number': 255, 'pid': 16785614, 'length': 40}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'cmd': 2, 'version': 1, 'reserved': 0, 'dpifindex': 218, 'attrs': [('OVS_METER_ATTR_ID', b'\x08\x00\x01\x00\xe7\x03\x00\x00')], 'header': {'length': 32, 'type': 648, 'flags': 0, 'sequence_number': 255, 'pid': 16785614, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}}
+
+
+ID: 25 === Executing PRE_TEST of the test case: OVS_METER_ATTR_CLEAR[Null]-CMD[2].yaml===
+
+
+ID: 25 === Executing TEST of the test case: OVS_METER_ATTR_CLEAR[Null]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 219, 'attrs': [('OVS_METER_ATTR_CLEAR', None), ('OVS_METER_ATTR_ID', 1), ('OVS_METER_ATTR_BANDS', [{'attrs': [['OVS_BAND_ATTR_TYPE', 100], ['OVS_BAND_ATTR_RATE', 1265], ['OVS_BAND_ATTR_BURST', 200], ['OVS_BAND_ATTR_STATS', {'packets': 50, 'bytes': 2546, 'attrs': [], 'header': {}}]], 'header': {}}])], 'header': {'type': 655, 'flags': 5, 'sequence_number': 255, 'pid': 16785614, 'length': 44}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'cmd': 2, 'version': 1, 'reserved': 0, 'dpifindex': 219, 'attrs': [('OVS_METER_ATTR_ID', b'\x08\x00\x01\x00\x01\x00\x00\x00')], 'header': {'length': 32, 'type': 655, 'flags': 0, 'sequence_number': 255, 'pid': 16785614, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}}
+
+
+ID: 26 === Executing PRE_TEST of the test case: OVS_METER_ATTR_STATS[ObjPrimitive]-CMD[2].yaml===
+
+
+ID: 26 === Executing TEST of the test case: OVS_METER_ATTR_STATS[ObjPrimitive]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 220, 'attrs': [('OVS_METER_ATTR_STATS', 100), ('OVS_METER_ATTR_ID', 1), ('OVS_METER_ATTR_BANDS', [{'attrs': [['OVS_BAND_ATTR_TYPE', 100], ['OVS_BAND_ATTR_RATE', 1265], ['OVS_BAND_ATTR_BURST', 200], ['OVS_BAND_ATTR_STATS', {'packets': 50, 'bytes': 2546, 'attrs': [], 'header': {}}]], 'header': {}}])], 'header': {'type': 662, 'flags': 5, 'sequence_number': 255, 'pid': 25174222, 'length': 60}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'cmd': 2, 'version': 1, 'reserved': 0, 'dpifindex': 220, 'attrs': [('OVS_METER_ATTR_ID', b'\x08\x00\x01\x00\x01\x00\x00\x00')], 'header': {'length': 32, 'type': 662, 'flags': 0, 'sequence_number': 255, 'pid': 25174222, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}}
+
+
+ID: 27 === Executing PRE_TEST of the test case: OVS_METER_ATTR_CLEAR[NumOverflowUint]-CMD[2].yaml===
+
+
+ID: 27 === Executing TEST of the test case: OVS_METER_ATTR_CLEAR[NumOverflowUint]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 221, 'attrs': [('OVS_METER_ATTR_CLEAR', 4294968295), ('OVS_METER_ATTR_ID', 1), ('OVS_METER_ATTR_BANDS', [{'attrs': [['OVS_BAND_ATTR_TYPE', 100], ['OVS_BAND_ATTR_RATE', 1265], ['OVS_BAND_ATTR_BURST', 200], ['OVS_BAND_ATTR_STATS', {'packets': 50, 'bytes': 2546, 'attrs': [], 'header': {}}]], 'header': {}}])], 'header': {'type': 669, 'flags': 5, 'sequence_number': 255, 'pid': 25174222, 'length': 52}}
+Netlink Error Code: 34
+Netlink Error Message: Numerical result out of range
+Reply Message: None
+
+
+ID: 28 === Executing PRE_TEST of the test case: OVS_METER_ATTR_KBPS[NumMaxUint]-CMD[2].yaml===
+
+
+ID: 28 === Executing TEST of the test case: OVS_METER_ATTR_KBPS[NumMaxUint]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 222, 'attrs': [('OVS_METER_ATTR_KBPS', 4294967295), ('OVS_METER_ATTR_ID', 1), ('OVS_METER_ATTR_BANDS', [{'attrs': [['OVS_BAND_ATTR_TYPE', 100], ['OVS_BAND_ATTR_RATE', 1265], ['OVS_BAND_ATTR_BURST', 200], ['OVS_BAND_ATTR_STATS', {'packets': 50, 'bytes': 2546, 'attrs': [], 'header': {}}]], 'header': {}}])], 'header': {'type': 676, 'flags': 5, 'sequence_number': 255, 'pid': 25174222, 'length': 52}}
+Netlink Error Code: 34
+Netlink Error Message: Numerical result out of range
+Reply Message: None
+
+
+ID: 29 === Executing PRE_TEST of the test case: OVS_METER_ATTR_ID[NumOverflowUint]-CMD[4].yaml===
+
+
+ID: 29 === Executing TEST of the test case: OVS_METER_ATTR_ID[NumOverflowUint]-CMD[4].yaml===
+
+Message sent: {'cmd': 4, 'version': 2, 'reserved': 0, 'dpifindex': 223, 'attrs': [('OVS_METER_ATTR_ID', 4294968295)], 'header': {'type': 683, 'flags': 1, 'sequence_number': 255, 'pid': 25174222, 'length': 36}}
+Netlink Error Code: 2
+Netlink Error Message: No such file or directory
+Reply Message: None
+
+
+ID: 30 === Executing PRE_TEST of the test case: OVS_METER_ATTR_ID[NumMaxUint]-CMD[3].yaml===
+
+
+ID: 30 === Executing TEST of the test case: OVS_METER_ATTR_ID[NumMaxUint]-CMD[3].yaml===
+
+Message sent: {'cmd': 3, 'version': 2, 'reserved': 0, 'dpifindex': 224, 'attrs': [('OVS_METER_ATTR_ID', 4294967295)], 'header': {'type': 690, 'flags': 1, 'sequence_number': 255, 'pid': 25174222, 'length': 36}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'cmd': 3, 'version': 1, 'reserved': 0, 'dpifindex': 224, 'attrs': [], 'header': {'length': 24, 'type': 690, 'flags': 0, 'sequence_number': 255, 'pid': 25174222, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}}
+
+
+ID: 31 === Executing PRE_TEST of the test case: OVS_METER_ATTR_BANDS[ObjPrimitive]-CMD[2].yaml===
+
+
+ID: 31 === Executing TEST of the test case: OVS_METER_ATTR_BANDS[ObjPrimitive]-CMD[2].yaml===
+
+Message sent: {'cmd': 2, 'version': 2, 'reserved': 0, 'dpifindex': 225, 'attrs': [('OVS_METER_ATTR_BANDS', 100), ('OVS_METER_ATTR_ID', 1)], 'header': {'type': 697, 'flags': 5, 'sequence_number': 255, 'pid': 25174222, 'length': 40}}
+Netlink Error Code: None
+Netlink Error Message: None
+Reply Message: {'cmd': 2, 'version': 1, 'reserved': 0, 'dpifindex': 225, 'attrs': [('OVS_METER_ATTR_ID', b'\x08\x00\x01\x00\x01\x00\x00\x00')], 'header': {'length': 32, 'type': 697, 'flags': 0, 'sequence_number': 255, 'pid': 25174222, 'error': None, 'target': 'localhost', 'stats': Stats(qsize=0, delta=0, delay=0)}}

@@ -1,0 +1,7 @@
+pre_test:
+    script_name: ovs_packet_pre_tests.sh
+test:
+    command: 3
+    gnl_atts:
+    -   OVS_FLOW_ATTR_PROBE: NumUnderflowUint8
+    gnl_family_name: ovs_packet
